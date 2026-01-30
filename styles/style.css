@@ -1,0 +1,60 @@
+:root {
+    /* Font families */
+    --font-heading: 'Londrina Solid', serif;
+    --font-body: 'Alan Sans', sans-serif;
+
+    /* Font sizes */
+    --text-h1: 48px;
+    --text-h2: 36px;
+    --text-h3: 24px;
+    --text-body: 16px;
+    --text-small: 14px;
+
+    /* Font weights */
+    --weight-black: 900;
+    --weight-regular: 400;
+
+    /* Brand colors */
+    --color-dark-primary: #E4572E;
+    --color-primary: #E4572E;
+    --color-accent: #F4C95D;
+    --color-secondary: #1E1E1E;
+
+    /* Backgrounds */
+    --color-background: #FAFAFA;
+
+    /* Text */
+    --color-text-primary: #121212;
+    --color-text-secondary: #FFFFFF;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    font-weight: var(--weight-regular);
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: var(--font-heading);
+    font-size: var(--text-h1);
+    font-weight: var(--weight-black);
+    color: var(--color-text-primary);
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-size: var(--text-h2);
+    font-weight: var(--weight-black);
+    color: var(--color-text-primary);
+}
+
+h3 {
+    font-family: var(--font-heading);
+    font-size: var(--text-h3);
+    font-weight: var(--weight-black);
+    color: var(--color-text-primary);
+}
