@@ -20,18 +20,21 @@
         rel="stylesheet">
 
     <!-- Flavicon -->
-     <link rel="shortcut icon" href="assets/Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/Logo.png" type="image/x-icon">
 </head>
 
 <body>
-    <header>
+    <header id="header-nav">
         <nav>
-            <img src="assets/Logo.png" alt="Logo">
-            <ul>
-                <li class="nav-item"><a href="index.html">Accueil</a></li>
-                <li class="nav-item"><a href="product.html">Nos Produits</a></li>
-                <li class="nav-item"><a href="contact.html">Qui somme-nous ?</a></li>
-            </ul>
+            <a href="index.html"><img src="assets/Logo.png" alt="Logo"></a>
+            <div id="nav-items">
+                <ul>
+                    <li class="nav-item"><a href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a href="product.html">Nos Produits</a></li>
+                    <li class="nav-item"><a href="contact.html">Qui somme-nous ?</a></li>
+                </ul>
+            </div>
+            <div id="nav-burger">&#9776;</div>
         </nav>
     </header>
     <main>
@@ -39,7 +42,7 @@
         <section>
             <h2>Nos burger au boeuf :</h2>
 
-            <div class="row-product">
+            <div class="product-list">
                 <div class="product-card">
                     <img src="assets/burger-image/Burger1.png
                     " alt="">
@@ -79,7 +82,7 @@
         <section>
             <h2>Nos burger au poulet:</h2>
 
-            <div  class="row-product">
+            <div class="product-list">
                 <div class="product-card">
                     <img src="assets/burger-image/Burger7.png" alt="">
                     <div>
@@ -109,7 +112,7 @@
         <section>
             <h2>Nos petites faims :</h2>
 
-            <div class="row-product">
+            <div class="product-list">
 
                 <div class="product-card">
                     <img src="assets/burger-image/Fries.png" alt="">
@@ -138,7 +141,7 @@
             </div>
         </section>
 
-        <section class="buttom-button">
+        <section class="bottom-button">
             <button class="btn-outline">Revenir à la page d’accueil</button>
             <button class="btn-outline">Où nous trouver ?</button>
         </section>

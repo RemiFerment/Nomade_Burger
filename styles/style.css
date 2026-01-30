@@ -73,17 +73,11 @@ nav {
     display: flex;
     align-items: center;
     gap: 100px;
+    margin: 0;
 
     img {
         height: 75px;
         margin-left: 10%;
-    }
-
-    ul {
-        display: flex;
-        list-style: none;
-        gap: 20px;
-        padding: 0;
     }
 }
 
@@ -120,67 +114,67 @@ main {
             }
         }
     }
+}
 
 
+/* ID Styles */
 
-    /* ID Styles */
+#about-us {
+    margin-bottom: 60px;
 
-    #about-us {
-        margin-bottom: 60px;
+    h2 {
+        text-align: center;
+    }
 
-        h2 {
-            text-align: center;
-        }
+    div {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 128px;
 
         div {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 128px;
+            gap: 10px;
+            font-size: var(--text-h3);
+            font-weight: var(--weight-SemiBold);
+            max-width: 300px;
+            text-align: center;
 
-            div {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-                font-size: var(--text-h3);
-                font-weight: var(--weight-SemiBold);
-                max-width: 300px;
-                text-align: center;
-
-                img {
-                    width: 224px;
-                    margin-bottom: 10px;
-                }
+            img {
+                width: 200px;
+                margin-bottom: 10px;
             }
         }
     }
+}
 
-    
-    #best-sellers {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        .product-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
+
+#best-sellers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#who_we_are {
+    display: flex;
+    flex-direction: row;
+    gap: 128px;
+    flex: 1;
+
+    img {
+        height: fit-content;
+        width: 50%;
+        border-radius: 16px;
     }
 }
 
-#who_we_are{
-    display: flex;
-    flex-direction:row;
-    gap: 20px;
-}
-
-#contact{
-    a{
-        display:block;
+#contact {
+    a {
+        display: block;
     }
 }
 
@@ -258,12 +252,6 @@ footer {
     }
 }
 
-.row-product{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
 .product-card {
     display: flex;
     flex-direction: column;
@@ -312,17 +300,42 @@ footer {
     }
 }
 
-.buttom_button{
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bottom-button {
     margin-top: 55px;
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
+/* ID Styles */
+
+
+
+#nav-items ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+
+#nav-burger {
+    display: none;
+    color: var(--color-text-secondary);
+    font-size: 32px;
+    cursor: pointer;
+}
+
 /* Version Mobile */
 
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
 
     :root {
         --text-h1: 32px;
@@ -332,24 +345,81 @@ footer {
         --text-small: 13px;
     }
 
-    /* Class Styles */
+    nav {
+        justify-content: space-between;
 
-    .row-product {
-        grid-template-columns: repeat(2, 1fr);
+        img {
+            margin-left: 10px;
+        }
     }
 
-    .buttom-button {
+    main {
+        margin-inline: 10px;
+
+        header {
+            margin-top: 20px;
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+
+            #header-content {
+                max-width: fit-content;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h1,
+                h2 {
+                    margin: 10px;
+                }
+            }
+
+            div {
+
+                img {
+                    width: 95%;
+                }
+            }
+        }
+
+    }
+
+    /* Class Styles */
+
+    .bottom-button {
         margin-top: 55px;
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
 
-    #who_we_are{
+    /* ID Styles */
+
+    #who_we_are {
         display: flex;
         flex-direction: column;
-        width: 95%;
+        align-items: center;
         margin-bottom: 20px;
+        gap:10px;
+
+        img {
+            width: 90%;
+        }
+    }
+
+    #about-us {
+        div {
+            gap: 20px;
+        }
+    }
+
+    /* Switch Nav mode */
+    #nav-burger {
+        display: block;
+    }
+
+    #nav-items {
+        display: none;
     }
 }
-
