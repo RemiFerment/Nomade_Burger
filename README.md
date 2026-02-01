@@ -11,15 +11,13 @@
 3. Right-click on `index.html` and select "Open with Live Server"
 4. Your default browser will automatically open the project at `http://localhost:5500`
 
-### Usage
-
-The Live Server will automatically reload the page whenever you save changes to your files. Simply edit your HTML, CSS, or JavaScript files and watch the updates in real-time.
-
 ### File Structure
 
 ```
 Nomade_Burger/
 ├── index.html
+├── product.html
+├── contact.html
 ├── css/
 ├── js/
 └── assets/
